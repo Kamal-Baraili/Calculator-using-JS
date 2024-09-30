@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="calculator">
+        <input type="text" id="number-input" readonly />
+        <div class="buttons">
+          <div class="row">
+            <div
+              onclick="handleFunction(this)"
+              class="col cal-buttons operators"
+            >
+              +
+            </div>
+            <div
+              onclick="handleFunction(this)"
+              class="col cal-buttons operators"
+            >
+              -
+            </div>
+            <div
+              onclick="handleFunction(this)"
+              class="col cal-buttons operators"
+            >
+              *
+            </div>
+            <div
+              onclick="handleFunction(this)"
+              class="col cal-buttons operators"
+            >
+              /
+            </div>
+          </div>
+
+          <div class="row">
+            <div onclick="handleFunction(this)" class="col cal-buttons">7</div>
+            <div onclick="handleFunction(this)" class="col cal-buttons">8</div>
+            <div onclick="handleFunction(this)" class="col cal-buttons">9</div>
+          </div>
+
+          <div class="row">
+            <div onclick="handleFunction(this)" class="col cal-buttons">4</div>
+            <div onclick="handleFunction(this)" class="col cal-buttons">5</div>
+            <div onclick="handleFunction(this)" class="col cal-buttons">6</div>
+          </div>
+
+          <div class="row">
+            <div onclick="handleFunction(this)" class="col cal-buttons">3</div>
+            <div onclick="handleFunction(this)" class="col cal-buttons">2</div>
+            <div onclick="handleFunction(this)" class="col cal-buttons">1</div>
+          </div>
+
+          <div class="row">
+            <div onclick="handleFunction(this)" class="col cal-buttons">0</div>
+            <div
+              id="delete"
+              class="col cal-buttons"
+              style="width: 70px; background: rgb(90, 86, 86)"
+            >
+              del
+            </div>
+            <div id="answer" class="col cal-buttons operators">=</div>
+          </div>
+          <div class="row">
+            <div
+              id="clear"
+              class="col cal-buttons"
+              style="width: 70px; background: rgb(90, 86, 86)"
+            >
+              Clear
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
